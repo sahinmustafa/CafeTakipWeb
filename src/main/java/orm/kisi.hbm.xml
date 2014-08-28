@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.crm.model.Kisi" table="KISI">
+	  <id name="ID" column="ID">
+	      <generator class="increment"/>
+	  </id>
+	  <property name="ad" column="AD" type="string"></property>
+	  <property name="soyad" column="SOYAD" type="string"></property>
+	  <property name="sehir" column="SEHIR" type="string"></property>
+	  <property name="yas" column="YAS" type="integer"></property>
+  </class>
+</hibernate-mapping>
