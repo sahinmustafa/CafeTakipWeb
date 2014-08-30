@@ -4,21 +4,32 @@ Ext.define('app.view.menu.AnaMenu',{
     initComponent : function(){
         this.items = [{
                         text : 'Bilgisayar',
+                        iconCls : 'pc_menu_icon'
+                    },{
+                        text : 'Kafeterya',
+                        iconCls : 'kafeterya_menu_icon',
                         menu : {
                             xtype : 'menu',
                             plain : false,
                             items : [{
-                                text : 'MasaAc'
+                                text : 'Urun Ekle',
+                                action : 'urunEkle',
+                                iconCls : 'kafe_menu_ekle_icon'
                             },{
-                                text : 'Masa Ekle'
+                                text : 'Urun Listesi',
+                                action : 'urunListesi',
+                                iconCls : 'kafe_menu_liste_icon'
                             }]
                         }
                     },{
-                        text : 'Kafeterya'
+                        text : 'Adisyon',
+                        iconCls : 'adisyon_menu_icon'
                     },{
-                        text : 'Kasiyer'
+                        text : 'Musteri',
+                        iconCls : 'musteri_menu_icon'
                     },{
-                        text : 'Adisyon'
+                        text : 'Kasiyer',
+                        iconCls : 'kasiyer_menu_icon'
                     }];
         
         this.callParent();

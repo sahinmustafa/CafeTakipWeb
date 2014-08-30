@@ -1,0 +1,48 @@
+.add_icon {
+    background-image: url(images/add-icon.gif) !important;
+    background-repeat: no-repeat;
+}
+.delete_icon {
+    background-image: url(images/delete-icon.png) !important;
+    background-repeat: no-repeat;
+}
+.repeat_icon {
+    background-image: url(images/repeat-icon.png) !important;
+    background-repeat: no-repeat;
+}
+.pc_menu_icon {
+    background-image: url(images/pc_menu.png) !important;
+    background-repeat: no-repeat;
+}
+.kafeterya_menu_icon {
+    background-image: url(images/kafe_menu2.png) !important;
+    background-repeat: no-repeat;
+}
+.kafe_menu_ekle_icon{
+    background-image: url(images/kafe_menu.png) !important;
+    background-repeat: no-repeat;
+}
+.kafe_menu_liste_icon{
+    background-image: url(images/kafe_menu_list.png) !important;
+    background-repeat: no-repeat;
+}
+.adisyon_menu_icon {
+    background-image: url(images/adisyon.png) !important;
+    background-repeat: no-repeat;
+}
+.musteri_menu_icon {
+    background-image: url(images/musteri_menu.png) !important;
+    background-repeat: no-repeat;
+}
+.kasiyer_menu_icon {
+    background-image: url(images/kasiyer_menu.png) !important;
+}
+.kaydet_btn_icon{
+    background-image: url(images/kaydet.png);
+    background-repeat: no-repeat;
+    
+}
+.temizle_btn_icon{
+    background-image: url(images/temizle_icon.png) !important;
+    background-repeat: no-repeat;
+}

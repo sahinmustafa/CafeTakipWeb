@@ -2,6 +2,7 @@ Ext.define('app.view.CenterTabPanel',{
     extend : 'Ext.tab.Panel',
     activeTab : 0,
     alias : 'widget.centerTabPanel',
+    layout : 'anchor',
     items : [{
                     xtype : 'anaEkranV',
                     closable : false
@@ -18,14 +19,14 @@ Ext.define('app.view.CenterTabPanel',{
         return -1;        
     },
 
-    centerTabEkle : function(panel, title, cid){
+    centerTabEkle : function(panel, title, id){
         var index = this.panelVarmi(title);
         if(index !== -1){
             this.setActiveTab(index);
             return;
         }
         
-        var tabPage = Ext.create('app.view.KisiView', {cid : cid});
+        var tabPage = Ext.create(panel, {cid : id});
         tabPage.title = title;
         tabPage.closable = true;
         

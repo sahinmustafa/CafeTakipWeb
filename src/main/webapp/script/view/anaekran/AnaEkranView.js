@@ -4,7 +4,7 @@ Ext.define('app.view.anaekran.AnaEkranView',{
     title : 'Bilgisayar',    
     autoScroll : true,
     layout : 'column',
-    
+    iconCls : 'pc_menu_icon',
     initComponent : function(){
         this.callParent();
     },
@@ -22,7 +22,7 @@ Ext.define('app.view.anaekran.AnaEkranView',{
             height : 120,
             items : [{
                             xtype : 'image',
-                            src : 'images/kapali.png',
+                            src : 'css/images/kapali.png',
                             id : 'img' + isim
                         },{
                             xtype : 'label',

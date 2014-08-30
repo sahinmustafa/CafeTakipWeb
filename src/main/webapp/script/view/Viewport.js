@@ -15,14 +15,13 @@ Ext.define('app.view.Viewport',{
                             items : [{   
                                         xtype : 'panel',
                                         region : 'center',
-                                        layout : 'auto',
-                                        width : '75%',
-                                        height : '70%',
+                                        layout : 'anchor',
                                         items : [{
                                                         xtype : 'anaMenu',
+                                                        width : '100%'
                                                     },{
                                                         xtype : 'centerTabPanel',
-                                                        height : '100%'                                                        
+                                                        anchor : '100% 100'
                                                     }]
                                         
                                     },{
