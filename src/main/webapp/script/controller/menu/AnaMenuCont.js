@@ -23,6 +23,12 @@ Ext.define('app.controller.menu.AnaMenuCont',{
             },
             'anaMenu menuitem[action=musteriListesi]' :{
                 click : this.musteriListesi
+            },
+            'anaMenu menuitem[action=kasiyerListesi]' : {
+                click : this.kasiyerListesi
+            },
+            'anaMenu menuitem[action=kasiyerEkle]' : {
+                click : this.kasiyerEkle
             }
         });
     },
@@ -41,6 +47,14 @@ Ext.define('app.controller.menu.AnaMenuCont',{
             
     musteriListesi : function(){
         this.getCenterTabPanel().centerTabEkle('app.view.musteri.MusteriListView', 'Musteri Listesi', null);
+    },
+    
+    kasiyerListesi : function(){
+        this.getCenterTabPanel().centerTabEkle('app.view.KisiListesiView', 'Kisi Listesi', null);
+    },
+    
+    kasiyerEkle : function(){
+        this.getCenterTabPanel().centerTabEkle('app.view.KisiView', 'Kisi Ekle', 'cid : 0');
     }
 });
 

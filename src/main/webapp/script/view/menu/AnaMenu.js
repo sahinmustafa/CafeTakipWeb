@@ -43,7 +43,21 @@ Ext.define('app.view.menu.AnaMenu',{
                         }
                     },{
                         text : 'Kasiyer',
-                        iconCls : 'kasiyer_menu_icon'
+                        iconCls : 'kasiyer_menu_icon',
+                        menu : {
+                            xtype : 'menu',
+                            plain : false,
+                            items : [{
+                                text : 'Kasiyer Ekle',
+                                action : 'kasiyerEkle'
+                            },{
+                                text : 'Kasiyer Listesi',
+                                action : 'kasiyerListesi'
+                            },{
+                                text : 'Etkin Kasiyerli Gör',
+                                action : 'etkinKasiyer'
+                            }]
+                        }
                     }];
         
         this.callParent();
