@@ -82,7 +82,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                         },{
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Sifre',
-                                                            id : 'sifre1',
+                                                            id : 'sifre',
                                                             flex : 1,
                                                             padding : 5,
                                                             inputType : 'password',

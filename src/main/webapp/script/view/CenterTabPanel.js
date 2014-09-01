@@ -26,7 +26,7 @@ Ext.define('app.view.CenterTabPanel',{
             return;
         }
         
-        var tabPage = Ext.create(panel, {cid : id});
+        var tabPage = Ext.create(panel, id);
         tabPage.title = title;
         tabPage.closable = true;
         

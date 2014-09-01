@@ -20,12 +20,15 @@ Ext.define('app.controller.menu.AnaMenuCont',{
             },
             'anaMenu menuitem[action=musteriEkle]' : {
                 click : this.musteriEkle
+            },
+            'anaMenu menuitem[action=musteriListesi]' :{
+                click : this.musteriListesi
             }
         });
     },
     
     urunEkle : function(){
-         this.getCenterTabPanel().centerTabEkle('app.view.urun.UrunEkleView', 'Urun Ekle',0);
+         this.getCenterTabPanel().centerTabEkle('app.view.urun.UrunEkleView', 'Urun Ekle','cid : 0');
     },
             
     urunListesi : function(){
@@ -33,7 +36,11 @@ Ext.define('app.controller.menu.AnaMenuCont',{
     },
     
     musteriEkle : function(){
-        this.getCenterTabPanel().centerTabEkle('app.view.musteri.MusteriEkleView', 'Musteri Ekle', 0);
+        this.getCenterTabPanel().centerTabEkle('app.view.musteri.MusteriEkleView', 'Musteri Ekle', 'cid : 0');
+    },
+            
+    musteriListesi : function(){
+        this.getCenterTabPanel().centerTabEkle('app.view.musteri.MusteriListView', 'Musteri Listesi', null);
     }
 });
 
