@@ -17,6 +17,9 @@ Ext.define('app.controller.menu.AnaMenuCont',{
             },
             'anaMenu menuitem[action=urunListesi]' : {
                 click : this.urunListesi
+            },
+            'anaMenu menuitem[action=musteriEkle]' : {
+                click : this.musteriEkle
             }
         });
     },
@@ -27,6 +30,10 @@ Ext.define('app.controller.menu.AnaMenuCont',{
             
     urunListesi : function(){
         this.getCenterTabPanel().centerTabEkle('app.view.urun.UrunListView', 'Urun Listesi', null);
+    },
+    
+    musteriEkle : function(){
+        this.getCenterTabPanel().centerTabEkle('app.view.musteri.MusteriEkleView', 'Musteri Ekle', 0);
     }
 });
 

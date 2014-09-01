@@ -26,7 +26,21 @@ Ext.define('app.view.menu.AnaMenu',{
                         iconCls : 'adisyon_menu_icon'
                     },{
                         text : 'Musteri',
-                        iconCls : 'musteri_menu_icon'
+                        iconCls : 'musteri_menu_icon',
+                        menu : {
+                            xtype : 'menu',
+                            plain : false,
+                            items : [{
+                                text : 'Musteri Ekle',
+                                action : 'musteriEkle'
+                            },{
+                                text : 'Musteri Listesi',
+                                action : 'musteriListesi'
+                            },{
+                                text : 'Etkin Müsterileri Gör',
+                                action : 'etkinMusteri'
+                            }]
+                        }
                     },{
                         text : 'Kasiyer',
                         iconCls : 'kasiyer_menu_icon'

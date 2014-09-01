@@ -39,6 +39,11 @@ Ext.define('app.view.urun.UrunListView',{
                                     text : 'Sil',
                                     action : 'sil',
                                     iconCls : 'delete_icon'
+                            },{
+                                xtype : 'textfield',
+                                emptyText : 'Ara',
+                                id : 'ara',
+                                hidenLabel : true
                             }];
         this.bbar = [{
                                 xtype : 'pagingtoolbar',
