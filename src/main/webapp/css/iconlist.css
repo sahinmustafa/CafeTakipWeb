@@ -1,9 +1,9 @@
 .add_icon {
-    background-image: url(images/add-icon.gif) !important;
+    background-image: url(images/add.png) !important;
     background-repeat: no-repeat;
 }
 .delete_icon {
-    background-image: url(images/delete-icon.png) !important;
+    background-image: url(images/delete.png) !important;
     background-repeat: no-repeat;
 }
 .repeat_icon {
@@ -44,5 +44,9 @@
 }
 .temizle_btn_icon{
     background-image: url(images/temizle_icon.png) !important;
+    background-repeat: no-repeat;
+}
+.ara_icon {
+    background-image: url(images/ara.png) !important;
     background-repeat: no-repeat;
 }

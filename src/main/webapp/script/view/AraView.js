@@ -2,8 +2,6 @@ Ext.define('app.view.AraView',{
     extend : 'Ext.form.Panel',
     title : 'Kisi Ara',
     alias : 'widget.araV',
-    border :false,
-    collapsible : true,
     items :[{
                         xtype : 'textfield',
                         fieldLabel : 'ID',

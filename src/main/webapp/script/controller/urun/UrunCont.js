@@ -47,6 +47,9 @@ Ext.define('app.controller.urun.UrunCont',{
             },
             'urunListV, button[action=guncelle]' : {
                 click : this.guncelle
+            },
+            'urunListV textfield' : {
+                specialkey : this.ara
             }
         });
     },
@@ -59,13 +62,17 @@ Ext.define('app.controller.urun.UrunCont',{
         
     },
     ekle : function(){
-
+        alert('ekle');
     },
     sil : function(){
         
     },
     guncelle : function(){
         
+    },
+    ara : function(ths,e){
+        if(Ext.EventObject.getKey() === 13)
+           Ext.Msg.alert('Urun Ara', 'Arama sonucu bulunmadi!');
     }
 });
 

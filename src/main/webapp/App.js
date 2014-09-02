@@ -3,6 +3,7 @@ Ext.application({
 	appFolder : 'script',
 	controllers :['KisiCont', 
                                      'anaekran.AnaEkranCont',
-                                     'menu.AnaMenuCont'],
+                                     'menu.AnaMenuCont',
+                                     'urun.UrunCont'],
 	autoCreateViewport : true	
 });

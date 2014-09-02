@@ -18,7 +18,7 @@ Ext.define('app.view.urun.UrunListView',{
                                     dataIndex : 'barkod',
                                     flex : 1
                                 },{
-                                    header : 'Birim Fiyati',
+                                    header : 'Birim Fiyati (TL)',
                                     dataIndex : 'birimFiyati',
                                     flex : 1
                                 },{
@@ -32,18 +32,22 @@ Ext.define('app.view.urun.UrunListView',{
                                     action : 'ekle',
                                     iconCls : 'add_icon'
                             },{
-                                    text : 'Guncelle',
-                                    action : 'guncelle',
-                                    iconCls : 'repeat_icon'
-                            },{
                                     text : 'Sil',
                                     action : 'sil',
                                     iconCls : 'delete_icon'
-                            },{
+                            },
+                            '->',{
                                 xtype : 'textfield',
-                                emptyText : 'Ara',
+                                emptyText : 'Urun Adi',
                                 id : 'ara',
-                                hidenLabel : true
+                                width : '20%',
+                                hidenLabel : true,
+                                fieldLabel : 'Ara',
+                                labelWidth : 20
+                            },{
+                                text : 'Gelismis Arama',
+                                action : 'gelismisArama',
+                                iconCls : 'ara_icon'
                             }];
         this.bbar = [{
                                 xtype : 'pagingtoolbar',

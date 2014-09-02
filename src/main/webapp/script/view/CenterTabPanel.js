@@ -29,7 +29,7 @@ Ext.define('app.view.CenterTabPanel',{
         var tabPage = Ext.create(panel, id);
         tabPage.title = title;
         tabPage.closable = true;
-        
+
         this.add(tabPage);
         
         this.setActiveTab( this.items.items.length-1);
