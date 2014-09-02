@@ -6,6 +6,7 @@
 
 package com.crm.dao;
 
+import com.crm.model.Bilgisayar;
 import java.util.ArrayList;
 
 /**
@@ -18,16 +19,16 @@ public class DaoMBilgisayar implements DaoInterface<Bilgisayar>{
         return DaoH.ekle(model);
     }
 
-    public boolean guncelle(int id, Bilgisayar yeniModel) {
-        return DaoH.guncelle(id, yeniModel);
+    public boolean guncelle(Bilgisayar yeniModel) {
+        return DaoH.guncelle(yeniModel);
     }
 
     public Bilgisayar cek(int id) {
-        return DaoH.bilgiGetir(id, Bilgisayar.class);
+        return (Bilgisayar) DaoH.bilgiGetir(id, Bilgisayar.class);
     }
 
     public ArrayList<Bilgisayar> listele(String hql) {
-        return DaoH.listele(hql);
+        return (ArrayList<Bilgisayar>) DaoH.listele(hql);
     }
 
     public boolean sil(int id) {
