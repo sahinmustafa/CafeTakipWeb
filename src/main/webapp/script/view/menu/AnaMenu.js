@@ -32,13 +32,16 @@ Ext.define('app.view.menu.AnaMenu',{
                             plain : false,
                             items : [{
                                 text : 'Musteri Ekle',
-                                action : 'musteriEkle'
+                                action : 'musteriEkle',
+                                iconCls : 'musteri_ekle_icon'
                             },{
                                 text : 'Musteri Listesi',
-                                action : 'musteriListesi'
+                                action : 'musteriListesi',
+                                iconCls : 'musteri_liste_icon'
                             },{
                                 text : 'Etkin Müsterileri Gör',
-                                action : 'etkinMusteri'
+                                action : 'etkinMusteri',
+                                iconCls : 'musteri_etkin_icon'
                             }]
                         }
                     },{
@@ -49,10 +52,12 @@ Ext.define('app.view.menu.AnaMenu',{
                             plain : false,
                             items : [{
                                 text : 'Kasiyer Ekle',
-                                action : 'kasiyerEkle'
+                                action : 'kasiyerEkle',
+                                iconCls : 'kasiyer_ekle_icon'
                             },{
                                 text : 'Kasiyer Listesi',
-                                action : 'kasiyerListesi'
+                                action : 'kasiyerListesi',
+                                iconCls : 'kasiyer_liste_icon'
                             },{
                                 text : 'Etkin Kasiyerli Gör',
                                 action : 'etkinKasiyer'

@@ -1,17 +1,17 @@
-
-Ext.define('app.view.musteri.MusteriListView',{
+Ext.define('app.view.calisan.CalisanListView',{
     extend : 'Ext.grid.Panel',
-    alias : 'widget.musteriListV',
-    title : 'Musteri Listesi'  ,
-    iconCls : 'musteri_liste_icon',
+    alias : 'widget.calisanListV',
+    title : 'Calisan Listesi',
+    iconCls : 'kasiyer_liste_icon',
+    
     initComponent : function(){
         this.columns = [{
                                     header : 'ID',
                                     dataIndex : 'id',
-                                    flex : 0.8
+                                    flex : 1
                                 },{
                                     header : 'Adi',
-                                    dataIndex : 'ad',
+                                    dataIndex : 'adi',
                                     flex : 1
                                 },{
                                     header : 'Soyadi',
@@ -22,19 +22,23 @@ Ext.define('app.view.musteri.MusteriListView',{
                                     dataIndex : 'kulAdi',
                                     flex : 1
                                 },{
-                                    header : 'Bitis Tarihi',
-                                    dataIndex : 'bitisTarih',
+                                    header : 'Telefon',
+                                    dataIndex : 'telefon',
                                     flex : 1
                                 },{
-                                    header : 'Borc',
-                                    dataIndex : 'borc',
-                                    flex : 0.5
+                                    header : 'Maas',
+                                    dataIndex : 'maas',
+                                    flex : 1
                                 },{
-                                    header : 'Indirim',
-                                    dataIndex : 'indirim',
-                                    flex : 0.5
+                                    header : 'Adres',
+                                    dataIndex : 'adres',
+                                    flex : 2
+                                },{
+                                    header : 'Yetki',
+                                    dataIndex : 'yetki',
+                                    flex : 1
                                 }];
-        this.store = Ext.create('app.store.MusteriStore');
+        this.store = Ext.create('app.store.CalisanStore');
         this.tbar = [{
                                     text : 'Ekle',
                                     action : 'ekle',
@@ -47,7 +51,7 @@ Ext.define('app.view.musteri.MusteriListView',{
                             '->',{
                                 xtype : 'textfield',
                                 emptyText : 'Kullanici Adi',
-                                id : 'ara', 
+                                id : 'ara',
                                 width : '20%',
                                 hidenLabel : true,
                                 fieldLabel : 'Ara',
@@ -63,7 +67,6 @@ Ext.define('app.view.musteri.MusteriListView',{
                                 store : this.store,
                                 displayInfo : false
                             }];
-
         this.selModel = Ext.create('Ext.selection.CheckboxModel');
         this.callParent();
     }

@@ -9,7 +9,7 @@
 .repeat_icon {
     background-image: url(images/repeat-icon.png) !important;
     background-repeat: no-repeat;
-}
+} 
 .pc_menu_icon {
     background-image: url(images/pc_menu.png) !important;
     background-repeat: no-repeat;
@@ -34,8 +34,26 @@
     background-image: url(images/musteri_menu.png) !important;
     background-repeat: no-repeat;
 }
+.musteri_ekle_icon {
+    background-image: url(images/musteri_ekle.png) !important;
+    background-repeat: no-repeat;
+}
+.musteri_liste_icon {
+    background-image: url(images/musteri_list.png) !important;
+    background-repeat: no-repeat;
+}
+.musteri_etkin_icon {
+    background-image: url(images/musteri_etkin.png) !important;
+    background-repeat: no-repeat;
+}
 .kasiyer_menu_icon {
     background-image: url(images/kasiyer_menu.png) !important;
+}
+.kasiyer_ekle_icon {
+    background-image: url(images/kasiyer_ekle.png) !important;
+}
+.kasiyer_liste_icon {
+    background-image: url(images/kasiyer_list.png) !important;
 }
 .kaydet_btn_icon{
     background-image: url(images/kaydet.png);

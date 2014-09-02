@@ -50,11 +50,11 @@ Ext.define('app.controller.menu.AnaMenuCont',{
     },
     
     kasiyerListesi : function(){
-        this.getCenterTabPanel().centerTabEkle('app.view.KisiListesiView', 'Kisi Listesi', null);
+        this.getCenterTabPanel().centerTabEkle('app.view.calisan.CalisanListView', 'Calisan Listesi',null);
     },
     
     kasiyerEkle : function(){
-        this.getCenterTabPanel().centerTabEkle('app.view.KisiView', 'Kisi Ekle', 'cid : 0');
+        this.getCenterTabPanel().centerTabEkle('app.view.calisan.CalisanEkleView', 'Calisan Ekle', 'cid : 0');
     }
 });
 
