@@ -68,3 +68,23 @@
     background-image: url(images/ara.png) !important;
     background-repeat: no-repeat;
 }
+.masa_ac_icon{
+    background-image: url(images/pc_ac.png) !important;
+    background-repeat: no-repeat;
+}
+.masa_kapat_icon{
+    background-image: url(images/pc_kapat.png) !important;
+    background-repeat: no-repeat;
+}
+.masa_bekleme_icon{
+    background-image: url(images/pc_bekleme.png) !important; 
+    background-repeat: no-repeat;
+}
+.masa_aktar_icon{ 
+    background-image: url(images/masa_aktar.png) !important; 
+    background-repeat: no-repeat;
+}
+.sure_ekle_icon{ 
+    background-image: url(images/sure_ekle.png) !important; 
+    background-repeat: no-repeat;
+}
