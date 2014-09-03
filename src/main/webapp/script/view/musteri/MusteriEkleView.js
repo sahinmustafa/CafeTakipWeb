@@ -2,6 +2,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
     extend : 'Ext.form.Panel',
     alias : 'widget.musteriEkleV',
     title : 'Musteri Ekle',
+    iconCls : 'musteri_ekle_icon',
     bodyPadding : '5px',
     cid : 0,
     
