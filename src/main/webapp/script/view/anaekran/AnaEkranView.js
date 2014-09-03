@@ -6,7 +6,31 @@ Ext.define('app.view.anaekran.AnaEkranView',{
     layout : 'column',
     iconCls : 'pc_menu_icon',
     initComponent : function(){
+        this.tbar =[{
+                            tooltip : 'Masa Ac',
+                            scale : 'large',
+                            iconCls : 'masa_ac_icon'
+                            },{
+                            tooltip : 'Masa Bekeleme',
+                            scale : 'large',
+                            iconCls : 'masa_bekleme_icon'
+                            },{
+                            tooltip : 'Masa Kapat',
+                            scale : 'large',
+                            iconCls : 'masa_kapat_icon'
+                            },{
+                            tooltip : 'Masa Aktar',
+                            scale : 'large',
+                            iconCls : 'masa_aktar_icon'
+                            },{
+                            tooltip : 'Sure Ekle',
+                            scale : 'large',
+                            iconCls : 'sure_ekle_icon'
+                            }];
+        
         this.callParent();
+        
+        
     },
     
     addPC : function(isim){
