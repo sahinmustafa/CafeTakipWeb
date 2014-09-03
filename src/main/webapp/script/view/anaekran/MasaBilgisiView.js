@@ -49,28 +49,7 @@ Ext.define('app.view.anaekran.MasaBilgisiView',{
                                 duration : 6000,
                                 increment : 10,
                                 margin : '5,5,5,5'
-                            }];
-//                        {
-//                                xtype : 'container',
-//                                bodyPadding : 5,
-//                                layout : 'hbox',
-//                                items : [{
-//                                xtype :Ext.create('Ext.slider.Single',{
-//                                    fieldLabel : 'Sure Ekle',
-//                                    width : '80%',
-//                                    minValue : 0,
-//                                    maxValue : 120,
-//                                    increment : 15,
-//                                })},{
-//                                    xtype : 'button',
-//                                    iconCls : 'add_icon'
-//                                },{
-//                                    xtype : 'button',
-//                                    iconCls : 'delete_icon' 
-//                                }]
-//                                
-//                            }];
-                        this.buttons =[{
+                            },{
                                 xtype : 'button',
                                 text : 'Masa Ac/Kapat',
                                 action : 'masaAc',

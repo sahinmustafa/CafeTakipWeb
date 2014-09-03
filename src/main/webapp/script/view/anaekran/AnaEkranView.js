@@ -8,7 +8,7 @@ Ext.define('app.view.anaekran.AnaEkranView',{
     initComponent : function(){
         this.tbar =[{
                             tooltip : 'Masa Ac',
-                            scale : 'large',
+                            scale : 'medium',
                             iconCls : 'masa_ac_icon'
                             },{
                             tooltip : 'Masa Bekeleme',
