@@ -1,14 +1,19 @@
+/* ÖRNEKTÝR !! :) */
 package com.crm.helper.json;
 
 import java.util.List;
 
 import com.crm.model.Kisi;
+import java.io.IOException;
+import org.codehaus.jackson.map.ObjectMapper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class JSON {
+    
+    
 
     public static String[] getValuesFromJSONString(String jsonArray, String key){
         try {
