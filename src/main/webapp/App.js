@@ -4,6 +4,7 @@ Ext.application({
 	controllers :['KisiCont', 
                                      'anaekran.AnaEkranCont',
                                      'menu.AnaMenuCont',
+                                     'menu.BilgisayarMenuCont',
                                      'urun.UrunCont'],
 	autoCreateViewport : true	
 });
