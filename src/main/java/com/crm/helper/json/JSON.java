@@ -56,7 +56,7 @@ public class JSON {
         try{
             JSONObject json = new JSONObject();
 
-            json.put("id".toString(), k.getID());
+            json.put("id".toString(), k.getCOid());
             json.put("ad", k.getAd().toString());
             json.put("soyad", k.getSoyad().toString());
             json.put("yas", k.getYas());

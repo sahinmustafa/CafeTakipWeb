@@ -25,7 +25,7 @@ public class KisiServiceImpl implements KisiService{
     public void addKisi(HashMap params){
         Kisi k = new Kisi();
         
-        k.setID(Integer.parseInt((String) Helper.getHasMapValue(params, "id")));
+        k.setCOid(Integer.parseInt((String) Helper.getHasMapValue(params, "id")));
         k.setAd((String) Helper.getHasMapValue(params,"ad"));
         k.setSoyad((String) Helper.getHasMapValue(params,"soyad"));
         k.setSehir((String) Helper.getHasMapValue(params,"sehir"));

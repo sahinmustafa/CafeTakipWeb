@@ -5,6 +5,7 @@ Ext.application({
                                      'anaekran.AnaEkranCont',
                                      'menu.AnaMenuCont',
                                      'menu.BilgisayarMenuCont',
-                                     'urun.UrunCont'],
+                                     'urun.UrunCont',
+                                     'musteri.MusteriCont'],
 	autoCreateViewport : true	
 });

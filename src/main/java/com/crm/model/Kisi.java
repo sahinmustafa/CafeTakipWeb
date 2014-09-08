@@ -1,6 +1,6 @@
 package com.crm.model;
 
-public class Kisi extends CRMModel{
+public class Kisi extends CafeObject{
 
 	private String ad;
 	private String soyad;
