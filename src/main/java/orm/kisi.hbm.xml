@@ -7,7 +7,5 @@
 	  </id>
 	  <property name="ad" column="AD" type="string"></property>
 	  <property name="soyad" column="SOYAD" type="string"></property>
-	  <property name="sehir" column="SEHIR" type="string"></property>
-	  <property name="yas" column="YAS" type="integer"></property>
   </class>
 </hibernate-mapping>
