@@ -27,8 +27,6 @@ public class SerCalisan implements ServiceInterface <Calisan>{
         m.setCOid(Integer.parseInt((String) Helper.getHasMapValue(params, "id")));
         m.setAd((String) Helper.getHasMapValue(params,"ad"));
         m.setSoyad((String) Helper.getHasMapValue(params,"soyad"));
-        m.setSehir((String) Helper.getHasMapValue(params,"sehir"));
-        m.setYas(Integer.parseInt((String) Helper.getHasMapValue(params,"yas")));
 
         dao.ekle(m);
     }

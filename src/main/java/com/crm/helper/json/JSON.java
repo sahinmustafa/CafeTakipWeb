@@ -59,8 +59,6 @@ public class JSON {
             json.put("id".toString(), k.getCOid());
             json.put("ad", k.getAd().toString());
             json.put("soyad", k.getSoyad().toString());
-            json.put("yas", k.getYas());
-            json.put("sehir", k.getSehir().toString());
 
             return json;
         }catch(JSONException ex){

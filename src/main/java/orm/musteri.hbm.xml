@@ -2,14 +2,14 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
   <class name="com.crm.model.Musteri" table="MUSTERI" >
-        <id name="COid" column="ID">
-            <generator class="increment"/>
-        </id>
+      <id name="COid" column="ID">
+	      <generator class="increment"/>
+	  </id>
         <property name="ad" column="AD" type="string"></property>
         <property name="soyad" column="SOYAD" type="string"></property>
-        <property name="kredi" column="SEHIR" type="string"></property>
+        <property name="kredi" column="KREDI" type="integer"></property>
         <property name="harcanan" column="HARCANAN" type="integer"></property>
-        <property name="borc" column="BORC" type="integer"></property>
+        <property name="borc" column="BORC" type="double"></property>
         <property name="ucretSecenek" column="UCRET_SECENEK" type="string"></property>
         <property name="odemeSecenek" column="ODEME_SECENEK" type="string"></property>
         <property name="bitisTarih" column="BITIS_TARIH" type="date"></property>

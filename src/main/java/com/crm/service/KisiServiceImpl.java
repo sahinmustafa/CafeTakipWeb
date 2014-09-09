@@ -28,8 +28,6 @@ public class KisiServiceImpl implements KisiService{
         k.setCOid(Integer.parseInt((String) Helper.getHasMapValue(params, "id")));
         k.setAd((String) Helper.getHasMapValue(params,"ad"));
         k.setSoyad((String) Helper.getHasMapValue(params,"soyad"));
-        k.setSehir((String) Helper.getHasMapValue(params,"sehir"));
-        k.setYas(Integer.parseInt((String) Helper.getHasMapValue(params,"yas")));
 
         dao.addKisi(k);
     }

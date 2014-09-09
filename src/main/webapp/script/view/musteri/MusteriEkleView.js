@@ -25,6 +25,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'ID',
                                                             id : 'id',
+                                                            name : 'id',
                                                             disabled : true,
                                                             colspan : 3,
                                                             padding : 5,
@@ -33,6 +34,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Ad',
                                                             id : 'ad',
+                                                            name : 'ad',
                                                             flex : 1,
                                                             padding : 5,
                                                             allowBlank : false,
@@ -41,6 +43,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Soyad',
                                                             id : 'soyad',
+                                                            name : 'soyad',
                                                             flex : 1,
                                                             padding : 5,
                                                             allowBlank : false,
@@ -49,6 +52,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Telefon',
                                                             id : 'telefon',
+                                                            name : 'telefon',
                                                             minLength : 10,
                                                             maxLength : 10,
                                                             invalidText : 'Lutfen gecerli bir telefon giriniz!'
@@ -66,6 +70,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Kullanici Adi',
                                                             id : 'kulAdi',
+                                                            name : 'kulAdi',
                                                             flex : 1,
                                                             padding : 5,
                                                             allowBlank : false,
@@ -77,6 +82,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'datefield',
                                                             fieldLabel : 'Bitis Tarihi',
                                                             id : 'bitisTarihi',
+                                                            name : 'bitisTarihi',
                                                             flex : 1,
                                                             padding : 5,
                                                             colspan : 2
@@ -84,6 +90,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Sifre',
                                                             id : 'sifre',
+                                                            name : 'sifre',
                                                             flex : 1,
                                                             padding : 5,
                                                             inputType : 'password',
@@ -97,6 +104,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'textfield',
                                                             fieldLabel : 'Sifre Tekrar',
                                                             id : 'sifre2',
+                                                            name : 'sifre2',
                                                             flex : 1,
                                                             padding : 5,
                                                             inputType : 'password',
@@ -109,6 +117,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'numberfield',
                                                             fieldLabel : 'Kullanilan Sure',
                                                             id : 'kullanilanSure',
+                                                            name : 'kullanilanSure',
                                                             flex : 1,
                                                             padding : 5,
                                                             value : 0,
@@ -117,6 +126,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'numberfield',
                                                             fieldLabel : 'Kalan Sure',
                                                             id : 'kalanSure',
+                                                            name : 'kalanSure',
                                                             flex : 1,
                                                             padding : 5,
                                                             value : 0
@@ -124,6 +134,7 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'numberfield',
                                                             fieldLabel : 'Borc',
                                                             id : 'borc',
+                                                            name : 'borc',
                                                             flex : 1,
                                                             padding : 5,
                                                             value : 0
@@ -131,55 +142,62 @@ Ext.define('app.view.musteri.MusteriEkleView', {
                                                             xtype : 'numberfield',
                                                             fieldLabel : 'Indirim(%)',
                                                             id : 'indirim',
+                                                            name : 'indirim',
                                                             flex : 1,
                                                             padding : 5,
                                                             value : 0,
                                                             minValue : 0
                                                         },{
-                                                            xtype : 'panel',
-                                                            border : false,
-                                                            layout : 'vbox',
-                                                            rowspan : 3,
+                                                            xtype : 'radiogroup',
+                                                            fieldLabel : 'Ucret Secenegi',
+                                                            columns : 1,
+                                                            id : 'ucretSecenek',
+                                                            padding : 5,
+                                                            labelWidth : 1,
                                                             items : [{
                                                                             xtype : 'radiofield',
                                                                             id : 'standart',
-                                                                            fieldLabel : 'Ucret Secenegi',
+                                                                            fieldLabel : '',
+                                                                            hideEmptyLabel: false,
                                                                             boxLabel : 'Standart',
-                                                                            name : 'ucretSecenek'
+                                                                            name : 'ucret'
                                                                         },{
                                                                             xtype : 'radiofield',
                                                                             id : 'uyeUcreti',
                                                                             fieldLabel : '',
                                                                             hideEmptyLabel: false,
                                                                             boxLabel : 'Uye Ucreti',
-                                                                            name : 'ucretSecenek'
+                                                                            name : 'ucret'
                                                                         },{
                                                                             xtype : 'radiofield',
                                                                             id : 'ucretsiz',
                                                                             fieldLabel : '',
                                                                             hideEmptyLabel: false,
                                                                             boxLabel : 'Ucretsiz',
-                                                                            name : 'ucretSecenek'
+                                                                            name : 'ucret'
                                                                         }]
                                                         },{
-                                                            xtype : 'panel',
-                                                            border : false,
-                                                            layout : 'vbox',
+                                                            xtype : 'radiogroup',
+                                                            fieldLabel : 'Odeme Secenegi',
+                                                            columns : 1,
+                                                            id : 'odemeSecenek',
                                                             rowspan : 2,
+                                                            padding : 5,
+                                                            labelWidth : 1,
                                                             items : [{
                                                                             xtype : 'radiofield',
-                                                                            id : 'odemeSecenegi',
-                                                                            fieldLabel : 'Odeme Secenegi',
+                                                                            id : 'onceden',
+                                                                            fieldLabel : '',
                                                                             hideEmptyLabel: false,
                                                                             boxLabel : 'Onceden Odenmis',
-                                                                            name : 'odemeSecenek'
+                                                                            name : 'odeme'
                                                                         },{
                                                                             xtype : 'radiofield',
                                                                             id : 'sonradan',
                                                                             fieldLabel : '',
                                                                             hideEmptyLabel: false,
                                                                             boxLabel : 'Sonradan Odenmis',
-                                                                            name : 'odemeSecenek'
+                                                                            name : 'odeme'
                                                                         }]
                                                         }]
                                         },{

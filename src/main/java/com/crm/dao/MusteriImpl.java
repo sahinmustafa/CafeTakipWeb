@@ -3,6 +3,7 @@ package com.crm.dao;
 import com.crm.model.Musteri;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,12 +13,12 @@ import org.springframework.stereotype.Repository;
 @Repository("dao")
 public class MusteriImpl implements MusteriDao<Musteri>{
 
-    
-    DaoH dao;
+    @Autowired
+    KisiDao kisiDao;
     
     public int musteriEkle(Musteri m) {
-        
-        return DaoH.ekle(m);
+        kisiDao.addKisi(m);
+        return -1;
     }
 
     public boolean musteriGuncelle(Musteri m) {

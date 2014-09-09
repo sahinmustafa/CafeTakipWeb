@@ -52,11 +52,11 @@ public class MusteriServiceImpl implements MusteriService<Musteri>{
         m.setCOid(Integer.parseInt( (String) Helper.getHasMapValue(params, "id")));
         m.setAd((String) Helper.getHasMapValue(params, "ad"));
         m.setSoyad((String) Helper.getHasMapValue(params, "soyad"));
-        m.setBitisTarihi(new Date((String) Helper.getHasMapValue(params, "bitisTarih")));
+        m.setBitisTarihi(new Date((String) Helper.getHasMapValue(params, "bitisTarihi")));
         m.setBorc(Double.parseDouble((String) Helper.getHasMapValue(params, "borc")));
-        m.setHarcanan(Integer.parseInt((String) Helper.getHasMapValue(params, "harcanan")));
+        m.setHarcanan(Integer.parseInt((String) Helper.getHasMapValue(params, "kullanilanSure")));
         m.setIndirim(Integer.parseInt((String) Helper.getHasMapValue(params, "indirim")));
-        m.setKredi(Integer.parseInt((String) Helper.getHasMapValue(params, "kredi")));
+        m.setKredi(Integer.parseInt((String) Helper.getHasMapValue(params, "kalanSure")));
         m.setOdemeSecenek((String) Helper.getHasMapValue(params, "odemeSecenek"));
         m.setUcretSecenek((String) Helper.getHasMapValue(params, "ucretSecenek"));
         
