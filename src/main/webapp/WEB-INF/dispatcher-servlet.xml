@@ -13,6 +13,7 @@
                             http://www.springframework.org/schema/mvc/spring-mvc.xsd">
                         
     <context:component-scan base-package="com.crm" />  
+    <mvc:resources mapping="/java/orm/*.hbm.xml" location="/java/orm/"/>
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
      
@@ -22,8 +23,8 @@
         <property name="suffix" value=".jsp" />  
     </bean> 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">  
-        <property name="configLocation" value="hibernate.cfg.xml"/>
-        <property name="mappingResources">
+        <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
+        <property name="mappingResources" >
             <list>
                 <value>orm/musteri.hbm.xml</value>
                 <value>orm/kisi.hbm.xml</value>
@@ -33,6 +34,6 @@
  
     <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">  
         <property name="sessionFactory" ref="sessionFactory" />  
-        
+         
     </bean>    
 </beans> 

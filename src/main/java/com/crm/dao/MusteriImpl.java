@@ -23,7 +23,7 @@ public class MusteriImpl implements MusteriDao<Musteri>{
 
     public boolean musteriGuncelle(Musteri m) {
         
-        return DaoH.guncelle(m);
+        return kisiDao.kisiGuncelle(m);
     }
 
     public Musteri getir(int id) {
